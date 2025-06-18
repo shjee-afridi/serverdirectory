@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://hentaidiscord.com/sitemap.xml
