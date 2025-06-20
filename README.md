@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# HentaiDiscord.com
 
-## Getting Started
+> **The Ultimate Discord Server Directory — Modern, Fast, and Feature-Rich**
 
-First, run the development server:
+![HentaiDiscord Banner](public/embed-image.avif)
+
+Welcome to **HentaiDiscord.com**, the next-generation Discord server directory. Discover, join, and promote the best Discord communities with a platform that's faster, smarter, and more beautiful than anything else out there.
+
+---
+
+## 🚀 Features
+
+- **Full Mobile Support**: 100% responsive, installable as a PWA (Progressive Web App) — use it like a native app on any device.
+- **Personalized Experience**: Smart recommendations, favorites, and tailored server suggestions.
+- **Real-Time Notifications**: Get instant alerts for bumps, reviews, and server activity.
+- **Live Analytics**: Interactive, real-time graphs for bumps, visits, shares, copy links, and average ratings — see your server's growth at a glance.
+- **Advanced Search & Filters**: Find exactly what you want, from NSFW to gaming, anime, and more.
+- **Modern UI/UX**: Beautiful, fast, and intuitive design with dark mode and smooth animations.
+- **Easy Server Management**: Effortless server submission, editing, and analytics for owners.
+- **Secure & Private**: OAuth with Discord, no unnecessary data collection.
+- **SEO Optimized**: Ranks for every Discord server query, even random or non-existent ones.
+- **Community-Driven**: Reviews, ratings, and active moderation.
+- **WPA Install**: Install the app on your device for a native-like experience.
+- **Real-Time Bump System**: Bump your server and see it rise instantly.
+- **Share & Copy Links**: One-click sharing and link copying for maximum reach.
+- **Average Rating & Reviews**: Transparent, community-powered feedback for every server.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Next.js 13** (App Router, SSR, ISR)
+- **React 18**
+- **Tailwind CSS**
+- **TypeScript**
+- **MongoDB** (with real-time updates)
+- **NextAuth.js** (Discord OAuth)
+- **Chart.js & react-chartjs-2** (for analytics)
+- **SWR** (real-time data fetching)
+- **Web Push** (notifications)
+- **PWA** (installable, offline support)
+- **Vercel** (deployment)
+
+---
+
+## 📊 Live Analytics Example
+
+![Live Analytics Example](public/embed-image.avif)
+
+- **Bumps**: Track how often your server is promoted.
+- **Visits**: See real-time and historical traffic.
+- **Shares & Copies**: Know how often your server is shared or copied.
+- **Average Rating**: Transparent, community-driven feedback.
+
+---
+
+## 🌟 Why HentaiDiscord.com?
+
+- **Better than Disboard**: More features, better UI, real-time everything, and a focus on both SFW and NSFW communities.
+- **Mobile-First**: Works perfectly on any device, installable as an app.
+- **Personalization**: The more you use it, the smarter it gets.
+- **Instant Everything**: No refresh needed — bumps, stats, and notifications update in real time.
+- **Open & Transparent**: All ratings and reviews are public and verifiable.
+
+---
+
+## 📱 Install as an App
+
+1. Visit [HentaiDiscord.com](https://hentaidiscord.com) on your phone or desktop.
+2. Tap "Install App" or use your browser's install option.
+3. Enjoy a full app experience with push notifications and offline support!
+
+---
+
+## 📝 Getting Started (Development)
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://hentaidiscord.com](http://hentaidiscord.com) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see your app in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🤝 Contributing
 
-## Learn More
+Pull requests and suggestions are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[MIT](LICENSE)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> **HentaiDiscord.com** — The most advanced Discord server directory. Discover, join, and grow your community today!
