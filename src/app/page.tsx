@@ -142,7 +142,7 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen items-center justify-start p-2 sm:p-8 bg-gradient-to-br from-gray-900 to-gray-800 dark:from-gray-900 dark:to-black transition-colors">
       {/* Add h1 for SEO */}
-      <h1 className="text-3xl font-extrabold text-white mb-4 text-center">
+      <h1 className="visually-hidden">
         Hentai Discord – Discover and Share the Best NSFW Anime Servers
       </h1>
       {/* Modern Search Bar with dark theme support */}
