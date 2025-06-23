@@ -60,5 +60,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     { upsert: true }
   );
 
+  // Create or update bump reminder for this user/server
+  const reminders = db.collection('bump_reminders');
+  const remindAt = new Date(now.getTime() + 2 * 60 * 60 * 1000); // 2 hours from now
+  await reminders.updateOne(
+    { userId: session.user.id, guildId: guildIdStr },
+    { $set: { enabled: true, remindAt } },
+    { upsert: true }
+  );
+
   return res.status(200).json({ success: true, bumpedAt: now });
 }
