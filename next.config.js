@@ -9,6 +9,11 @@ const nextConfig = {
     esmExternals: 'loose',
   },
   swcMinify: true, // Ensure JS is minified
+  images: {
+    domains: [
+      'cdn.discordapp.com',
+    ],
+  },
 };
 
 module.exports = withBundleAnalyzer(nextConfig);
