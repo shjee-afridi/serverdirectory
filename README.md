@@ -62,7 +62,7 @@ Welcome to **AnimeDiscord.com**, the next-generation Discord server directory. D
 
 ## 📊 Live Analytics Example
 
-![Live Analytics Example](public/embed-image.avif)
+![image](https://github.com/user-attachments/assets/4c16fbc5-a1b4-43f5-bdb4-9a9a7c1413f6)
 
 - **Bumps**: Track how often your server is promoted.
 - **Visits**: See real-time and historical traffic.
