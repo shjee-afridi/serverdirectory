@@ -83,7 +83,7 @@ Welcome to **AnimeDiscord.com**, the next-generation Discord server directory. D
 
 ## 📱 Install as an App
 
-1. Visit [HentaiDiscord.com](https://hentaidiscord.com) on your phone or desktop.
+1. Visit [AnimeDiscord.com](https://serverdirectory-dusky.vercel.app/) on your phone or desktop.
 2. Tap "Install App" or use your browser's install option.
 3. Enjoy a full app experience with push notifications and offline support!
 
