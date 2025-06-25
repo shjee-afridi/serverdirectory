@@ -1,10 +1,10 @@
-# HentaiDiscord.com
+# AnimeDiscord.com
 
 > **The Ultimate Discord Server Directory — Modern, Fast, and Feature-Rich**
 
-![HentaiDiscord Banner](public/embed-image.avif)
+![HentaiDiscord Banner](public/blank-icon.png)
 
-Welcome to **HentaiDiscord.com**, the next-generation Discord server directory. Discover, join, and promote the best Discord communities with a platform that's faster, smarter, and more beautiful than anything else out there.
+Welcome to **AnimeDiscord.com**, the next-generation Discord server directory. Discover, join, and promote the best Discord communities with a platform that's faster, smarter, and more beautiful than anything else out there.
 
 ---
 
@@ -54,7 +54,7 @@ Welcome to **HentaiDiscord.com**, the next-generation Discord server directory. 
 
 ---
 
-## 🌟 Why HentaiDiscord.com?
+## 🌟 Why AnimeDiscord.com?
 
 - **Better than Disboard**: More features, better UI, real-time everything, and a focus on both SFW and NSFW communities.
 - **Mobile-First**: Works perfectly on any device, installable as an app.
@@ -95,4 +95,4 @@ Pull requests and suggestions are welcome! For major changes, please open an iss
 
 ---
 
-> **HentaiDiscord.com** — The most advanced Discord server directory. Discover, join, and grow your community today!
+> **AnimeDiscord.com** — The most advanced Discord server directory. Discover, join, and grow your community today!
