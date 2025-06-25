@@ -16,7 +16,7 @@
   <a href="https://swr.vercel.app/"><img src="https://img.shields.io/badge/SWR-000?logo=vercel&logoColor=white" alt="SWR" /></a>
   <img src="https://img.shields.io/badge/Web%20Push-5a5a5a?logo=web-push&logoColor=white" alt="Web Push" />
   <img src="https://img.shields.io/badge/PWA-4285f4?logo=pwa&logoColor=white" alt="PWA" />
-  <a href="https://github.com/yourusername/anime-discord/actions"><img src="https://github.com/yourusername/anime-discord/workflows/CI/badge.svg" alt="Build Status" /></a>
+  <a href="https://github.com/shjee-afridi/serverdirectory/actions"><img src="https://github.com/shjee-afridi/serverdirectory/workflows/CI/badge.svg" alt="Build Status" /></a>
 </p>
 
 > **The Ultimate Discord Server Directory — Modern, Fast, and Feature-Rich**
