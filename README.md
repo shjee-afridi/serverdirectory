@@ -1,8 +1,25 @@
 # AnimeDiscord.com
 
-> **The Ultimate Discord Server Directory — Modern, Fast, and Feature-Rich**
+<p align="center">
+  <img src="public/blank-icon.png" alt="AnimeDiscord Logo" width="100" />
+</p>
 
-![HentaiDiscord Banner](public/blank-icon.png)
+<p align="center">
+  <a href="https://vercel.com?utm_source=anime-discord"><img src="https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel" alt="Vercel" /></a>
+  <a href="https://www.npmjs.com/package/next"><img src="https://img.shields.io/npm/v/next?color=crimson&label=Next.js&logo=next.js" alt="Next.js" /></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18-61dafb?logo=react" alt="React" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/TailwindCSS-2dd4bf?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178c6?logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white" alt="MongoDB" /></a>
+  <a href="https://next-auth.js.org/"><img src="https://img.shields.io/badge/NextAuth.js-1a202c?logo=nextdotjs" alt="NextAuth.js" /></a>
+  <a href="https://www.chartjs.org/"><img src="https://img.shields.io/badge/Chart.js-f5788d?logo=chart.js&logoColor=white" alt="Chart.js" /></a>
+  <a href="https://swr.vercel.app/"><img src="https://img.shields.io/badge/SWR-000?logo=vercel&logoColor=white" alt="SWR" /></a>
+  <img src="https://img.shields.io/badge/Web%20Push-5a5a5a?logo=web-push&logoColor=white" alt="Web Push" />
+  <img src="https://img.shields.io/badge/PWA-4285f4?logo=pwa&logoColor=white" alt="PWA" />
+  <a href="https://github.com/yourusername/anime-discord/actions"><img src="https://github.com/yourusername/anime-discord/workflows/CI/badge.svg" alt="Build Status" /></a>
+</p>
+
+> **The Ultimate Discord Server Directory — Modern, Fast, and Feature-Rich**
 
 Welcome to **AnimeDiscord.com**, the next-generation Discord server directory. Discover, join, and promote the best Discord communities with a platform that's faster, smarter, and more beautiful than anything else out there.
 
