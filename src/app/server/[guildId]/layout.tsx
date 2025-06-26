@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `${server.name} - Discord Server | Hentai Discord`;
   const description = server.shortDescription || server.description?.substring(0, 160) || 'Join this amazing Discord server!';
   const serverIconUrl = server.icon 
-    ? `https://cdn.discordapp.com/icons/${server.guildId}/${server.icon}.png?size=256`
-    : '/icon-512x512.png'; // Fallback to site icon
+    ? `https://cdn.discordapp.com/icons/${server.guildId}/${server.icon}.png?size=512`
+    : 'https://hentaidiscord.com/icon-512x512.png'; // Use full URL for fallback
   
   const serverUrl = `${process.env.NEXTAUTH_URL || 'https://hentaidiscord.com'}/server/${params.guildId}`;
 
@@ -46,15 +46,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     openGraph: {
-      title,
+      title: server.name,
       description,
       url: serverUrl,
       siteName: 'Hentai Discord',
       images: [
         {
           url: serverIconUrl,
-          width: 256,
-          height: 256,
+          width: 512,
+          height: 512,
           alt: `${server.name} Discord Server Icon`,
         },
       ],
@@ -62,8 +62,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'website',
     },
     twitter: {
-      card: 'summary',
-      title,
+      card: 'summary_large_image',
+      title: server.name,
       description,
       images: [serverIconUrl],
     },
@@ -73,6 +73,44 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function ServerLayout({ children }: Props) {
-  return children;
+export default async function ServerLayout({ children, params }: Props) {
+  const server = await getServerData(params.guildId);
+  
+  return (
+    <>
+      {server && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": server.name,
+              "description": server.shortDescription || server.description?.substring(0, 200) || 'Join this Discord server!',
+              "url": `${process.env.NEXTAUTH_URL || 'https://hentaidiscord.com'}/server/${server.guildId}`,
+              "image": server.icon 
+                ? `https://cdn.discordapp.com/icons/${server.guildId}/${server.icon}.png?size=512`
+                : 'https://hentaidiscord.com/icon-512x512.png',
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "Hentai Discord",
+                "url": "https://hentaidiscord.com"
+              },
+              "about": {
+                "@type": "Organization",
+                "name": server.name,
+                "description": server.description || server.shortDescription || 'Discord Server',
+                "image": server.icon 
+                  ? `https://cdn.discordapp.com/icons/${server.guildId}/${server.icon}.png?size=512`
+                  : 'https://hentaidiscord.com/icon-512x512.png',
+                "url": server.link || `${process.env.NEXTAUTH_URL || 'https://hentaidiscord.com'}/server/${server.guildId}`,
+                "sameAs": server.link ? [server.link] : undefined
+              }
+            })
+          }}
+        />
+      )}
+      {children}
+    </>
+  );
 }
