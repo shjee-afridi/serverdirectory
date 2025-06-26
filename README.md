@@ -100,6 +100,10 @@ Open [http://localhost:3000](http://localhost:3000) to see your app in action.
 
 ---
 
+![Class Diagram-1750915356949](https://github.com/user-attachments/assets/9da797a5-d42b-4008-a129-82a78a69fe99)
+
+---
+
 ## 🤝 Contributing
 
 Pull requests and suggestions are welcome! For major changes, please open an issue first to discuss what you would like to change.
