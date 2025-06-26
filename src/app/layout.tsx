@@ -16,8 +16,29 @@ export const metadata = {
     { rel: 'icon', url: "/icon-96x96.png", sizes: "96x96" },
     { rel: 'icon', url: "/icon-128x128.png", sizes: "128x128" },
     { rel: 'icon', url: "/icon-256x256.png", sizes: "256x256" },
-
   ],
+  openGraph: {
+    title: 'Hentai Discord',
+    description: 'Discover and share Discord servers!',
+    url: 'https://hentaidiscord.com',
+    siteName: 'Hentai Discord',
+    images: [
+      {
+        url: '/icon-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'Hentai Discord Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Hentai Discord',
+    description: 'Discover and share Discord servers!',
+    images: ['/icon-512x512.png'],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
