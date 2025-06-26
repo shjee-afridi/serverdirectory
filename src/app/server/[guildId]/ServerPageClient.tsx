@@ -196,6 +196,8 @@ export default function ServerPageClient({ params }: { params: { guildId: string
     username: string;
     avatar?: string;
     comment: string;
+    guildId: string;
+    _id?: string;
     // ...add other fields as needed
   };
 
@@ -392,6 +394,94 @@ export default function ServerPageClient({ params }: { params: { guildId: string
 
   return (
     <main className="min-h-screen flex justify-center items-start bg-gradient-to-br from-gray-950 to-gray-900 dark:from-black dark:to-gray-900 p-0 sm:p-4">
+      {/* Add structured data for SEO */}
+      {server && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": server.name,
+                "description": server.description || `Join ${server.name} Discord server with ${server.memberCount || 'thousands of'} members`,
+                "url": `https://hentaidiscord.com/server/${params.guildId}`,
+                "logo": server.icon ? `https://cdn.discordapp.com/icons/${params.guildId}/${server.icon}.png?size=512` : null,
+                "sameAs": [server.inviteCode ? `https://discord.gg/${server.inviteCode}` : null].filter(Boolean),
+                "aggregateRating": reviews.length > 0 ? {
+                  "@type": "AggregateRating",
+                  "ratingValue": averageRating,
+                  "reviewCount": reviews.length,
+                  "bestRating": "5",
+                  "worstRating": "1"
+                } : null,
+                "review": reviews.slice(0, 5).map((review: Review) => ({
+                  "@type": "Review",
+                  "author": {
+                    "@type": "Person",
+                    "name": review.username
+                  },
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": review.rating,
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "reviewBody": review.comment,
+                  "datePublished": review.createdAt
+                }))
+              })
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": `${server.name} Discord Server - Hentai Discord`,
+                "description": server.description || `Join ${server.name} Discord server with active community`,
+                "url": `https://hentaidiscord.com/server/${params.guildId}`,
+                "mainEntity": {
+                  "@type": "SoftwareApplication",
+                  "name": server.name,
+                  "applicationCategory": "CommunicationApplication",
+                  "operatingSystem": "Discord",
+                  "description": server.description,
+                  "aggregateRating": reviews.length > 0 ? {
+                    "@type": "AggregateRating", 
+                    "ratingValue": averageRating,
+                    "reviewCount": reviews.length
+                  } : null
+                },
+                "breadcrumb": {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://hentaidiscord.com"
+                    },
+                    {
+                      "@type": "ListItem", 
+                      "position": 2,
+                      "name": "Servers",
+                      "item": "https://hentaidiscord.com/servers"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": server.name,
+                      "item": `https://hentaidiscord.com/server/${params.guildId}`
+                    }
+                  ]
+                }
+              })
+            }}
+          />
+        </>
+      )}
       <div className="w-full max-w-2xl mx-auto mb-0 sm:mb-8 bg-neutral-900/90 rounded-2xl shadow-xl border border-neutral-800 overflow-hidden animate-fade-in">
         {/* Banner */}
         <div className="relative w-full h-40 sm:h-56 bg-neutral-800 flex items-center justify-center">

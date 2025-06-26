@@ -4,6 +4,7 @@ import PWAInstallPrompt from '@/components/PWAInstallPrompt';
 import Navbar from '@/components/Navbar';
 
 export const metadata = {
+  metadataBase: new URL('https://www.hentaidiscord.com'),
   title: 'Hentai Discord',
   description: 'Discover and share Discord servers!',
   manifest: '/manifest.json',
