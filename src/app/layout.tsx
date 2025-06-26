@@ -151,8 +151,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       ]
     }`,
   }}
-/>
-<script
+/>        <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: `{
@@ -176,6 +175,213 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }
         }
       ]
+    }`,
+  }}
+/>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Hentai Discord - Best NSFW Anime Discord Servers",
+      "description": "Discover the top hentai Discord servers with active NSFW anime communities, roleplay, and exclusive content.",
+      "url": "https://hentaidiscord.com",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Discord Server Directory",
+        "description": "A curated list of the best hentai and anime Discord servers",
+        "numberOfItems": "1000+",
+        "itemListElement": []
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://hentaidiscord.com/search/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }`,
+  }}
+/>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Discord Server Collection",
+      "description": "Browse our collection of Discord servers by category, popularity, and features",
+      "url": "https://hentaidiscord.com",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Featured Discord Servers",
+        "itemListElement": []
+      }
+    }`,
+  }}
+/>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Discord Server Directory Service",
+      "description": "A comprehensive directory service for finding and discovering Discord servers",
+      "provider": {
+        "@type": "Organization",
+        "name": "Hentai Discord",
+        "url": "https://hentaidiscord.com"
+      },
+      "serviceType": "Directory Service",
+      "areaServed": "Worldwide",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://hentaidiscord.com",
+        "serviceSmsNumber": null,
+        "servicePhone": null
+      }
+    }`,
+  }}
+/>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Hentai Discord",
+      "description": "Learn about our Discord server directory platform and community",
+      "url": "https://hentaidiscord.com/about",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Hentai Discord",
+        "description": "A comprehensive directory for discovering Discord servers focused on anime and NSFW communities"
+      }
+    }`,
+  }}
+/>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Hentai Discord",
+      "description": "Get in touch with our Discord server directory team",
+      "url": "https://hentaidiscord.com/contact",
+      "mainEntity": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "url": "https://hentaidiscord.com/contact",
+        "availableLanguage": ["English"]
+      }
+    }`,
+  }}
+/>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Discord",
+      "applicationCategory": "CommunicationApplication",
+      "operatingSystem": "Windows, macOS, Linux, iOS, Android",
+      "description": "Discord is a digital distribution platform designed for gaming communities",
+      "url": "https://discord.com",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Discord Inc."
+      }
+    }`,
+  }}
+/>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Hentai Discord Directory",
+      "applicationCategory": "DirectoryApplication",
+      "operatingSystem": "Web Browser",
+      "description": "Web application for discovering and managing Discord server listings",
+      "url": "https://hentaidiscord.com",
+      "browserRequirements": "Requires JavaScript",
+      "permissions": "Read user preferences, store user data",
+      "softwareVersion": "2.0",
+      "author": {
+        "@type": "Organization",
+        "name": "Hentai Discord"
+      }
+    }`,
+  }}
+/>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "DataFeed",
+      "name": "Discord Server Feed",
+      "description": "Real-time feed of Discord server updates and new listings",
+      "url": "https://hentaidiscord.com/api/servers",
+      "provider": {
+        "@type": "Organization",
+        "name": "Hentai Discord"
+      },
+      "dateModified": "${new Date().toISOString()}",
+      "dataFeedElement": {
+        "@type": "DataFeedItem",
+        "name": "Discord Server Data",
+        "description": "Information about Discord servers including member counts, categories, and descriptions"
+      }
+    }`,
+  }}
+/>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "name": "Hentai Discord Logo",
+      "description": "Official logo and branding for Hentai Discord server directory",
+      "url": "https://hentaidiscord.com/icon-512x512.png",
+      "width": 512,
+      "height": 512,
+      "encodingFormat": "image/png",
+      "contentUrl": "https://hentaidiscord.com/icon-512x512.png",
+      "creator": {
+        "@type": "Organization",
+        "name": "Hentai Discord"
+      }
+    }`,
+  }}
+/>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "name": "User Reviews for Discord Servers",
+      "description": "Community reviews and ratings for Discord servers in our directory",
+      "author": {
+        "@type": "Organization",
+        "name": "Hentai Discord Community"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "itemReviewed": {
+        "@type": "Service",
+        "name": "Discord Server Directory",
+        "description": "Platform for discovering Discord servers"
+      }
     }`,
   }}
 />
