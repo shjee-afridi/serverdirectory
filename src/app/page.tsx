@@ -8,6 +8,7 @@ import useSWR from 'swr';
 import Spinner from '@/components/Spinner';
 import { FaSearch, FaChevronDown, FaGlobe, FaLayerGroup, FaFire, FaClock } from 'react-icons/fa';
 import { CATEGORIES as CATEGORY_LIST } from '@/constants/categories';
+import StructuredData from '@/components/StructuredData';
 
 
 const LANGUAGES = [
@@ -141,6 +142,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col min-h-screen items-center justify-start p-2 sm:p-8 bg-gradient-to-br from-gray-900 to-gray-800 dark:from-gray-900 dark:to-black transition-colors">
+      <StructuredData />
       {/* Add h1 for SEO */}
       <h1 className="visually-hidden">
         Hentai Discord – Discover and Share the Best NSFW Anime Servers

@@ -402,12 +402,23 @@ export default function ServerPageClient({ params }: { params: { guildId: string
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@type": "Organization",
+                "@type": "Product",
                 "name": server.name,
                 "description": server.description || `Join ${server.name} Discord server with ${server.memberCount || 'thousands of'} members`,
                 "url": `https://hentaidiscord.com/server/${params.guildId}`,
-                "logo": server.icon ? `https://cdn.discordapp.com/icons/${params.guildId}/${server.icon}.png?size=512` : null,
-                "sameAs": [server.inviteCode ? `https://discord.gg/${server.inviteCode}` : null].filter(Boolean),
+                "image": server.icon ? `https://cdn.discordapp.com/icons/${params.guildId}/${server.icon}.png?size=512` : "https://hentaidiscord.com/icon-512x512.png",
+                "brand": {
+                  "@type": "Brand",
+                  "name": server.name
+                },
+                "category": "Software > Communication > Discord Server",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "url": server.inviteCode ? `https://discord.gg/${server.inviteCode}` : `https://hentaidiscord.com/server/${params.guildId}`
+                },
                 "aggregateRating": reviews.length > 0 ? {
                   "@type": "AggregateRating",
                   "ratingValue": averageRating,
@@ -415,7 +426,7 @@ export default function ServerPageClient({ params }: { params: { guildId: string
                   "bestRating": "5",
                   "worstRating": "1"
                 } : null,
-                "review": reviews.slice(0, 5).map((review: Review) => ({
+                "review": reviews.slice(0, 10).map((review: Review) => ({
                   "@type": "Review",
                   "author": {
                     "@type": "Person",
@@ -429,7 +440,7 @@ export default function ServerPageClient({ params }: { params: { guildId: string
                   },
                   "reviewBody": review.comment,
                   "datePublished": review.createdAt
-                }))
+                })).filter((review: any) => review.reviewBody && review.reviewBody.trim().length > 0)
               })
             }}
           />

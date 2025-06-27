@@ -93,7 +93,17 @@ If you have questions or concerns regarding these Terms, please contact our admi
 
 ---
 
-### 10. 🔄 Changes to the Terms
+### 10. 📜 Copyright and Licensing
+
+* **Copyright Notice:** © 2025 Hentai Discord. All rights reserved.
+* **Platform License:** The Hentai Discord website and its original content are provided under our proprietary license. Unauthorized copying, redistribution, or commercial use is prohibited.
+* **User Content License:** By submitting content (reviews, server descriptions, etc.), you grant Hentai Discord a non-exclusive, worldwide, royalty-free license to use, display, and modify your content for platform operations.
+* **Third-Party Content:** Discord server icons, banners, and related Discord content remain the property of their respective owners. Hentai Discord displays this content under fair use for directory and informational purposes.
+* **Image Licensing:** All images used on Hentai Discord are either original creations, used with permission, or fall under fair use guidelines. For licensing inquiries regarding our original images, please contact us through our terms page.
+
+---
+
+### 11. 🔄 Changes to the Terms
 
 We reserve the right to update or modify these Terms at any time. Continued use of HenatiDiscord after changes constitutes acceptance of the new Terms. It is your responsibility to review these Terms periodically.
 

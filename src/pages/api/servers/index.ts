@@ -49,6 +49,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     categories: 1,
     tags: 1,
     language: 1,
+    averageRating: 1,
+    reviewCount: 1,
     // add any other fields you want to show in the card
   };
 
