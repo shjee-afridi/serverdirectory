@@ -23,9 +23,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     
     const server = await res.json();
     
-    // Create optimized title and description
-    const serverTitle = `${server.name} Discord Server - Join ${server.name} on Hentai Discord`;
-    const serverDescription = `Join ${server.name} Discord server with ${server.memberCount || 'thousands of'} members. ${server.description || 'Active Discord community'} - Find the best Discord servers on Hentai Discord directory.`;
+    // Create optimized title and description for the server itself
+    const serverTitle = server.name;
+    const serverDescription = server.description ? 
+      server.description.replace(/<[^>]*>/g, '').substring(0, 160) : 
+      `Join ${server.name} Discord server with ${server.memberCount || 'thousands of'} active members.`;
     
     // Create keywords based on server data
     const keywords = [
@@ -43,16 +45,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ].join(', ');
 
     return {
-      title: serverTitle,
+      title: `${serverTitle} - Discord Server`,
       description: serverDescription,
       keywords: keywords,
       
-      // Open Graph tags for social sharing
+      // Open Graph tags for social sharing - focused on the server
       openGraph: {
         title: serverTitle,
         description: serverDescription,
         url: `${baseUrl}/server/${params.guildId}`,
-        siteName: 'Hentai Discord',
+        siteName: server.name,
         images: [
           {
             url: server.icon ? `https://cdn.discordapp.com/icons/${params.guildId}/${server.icon}.png?size=512` : '/icon-512x512.png',
@@ -65,7 +67,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         type: 'website',
       },
       
-      // Twitter Card tags
+      // Twitter Card tags - focused on the server
       twitter: {
         card: 'summary_large_image',
         title: serverTitle,
