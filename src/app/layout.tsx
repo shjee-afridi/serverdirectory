@@ -1,7 +1,9 @@
 import './globals.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import ClientProviders from '@/components/ClientProviders';
 import PWAInstallPrompt from '@/components/PWAInstallPrompt';
 import Navbar from '@/components/Navbar';
+import BootstrapClient from '@/components/BootstrapClient';
 
 export const metadata = {
   metadataBase: new URL('https://www.hentaidiscord.com'),
@@ -518,6 +520,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 />
       </head>
       <body className="pt-14"> {/* Add padding to prevent content under navbar */}
+        <BootstrapClient />
         <Navbar />
         <ClientProviders>
           <PWAInstallPrompt />
