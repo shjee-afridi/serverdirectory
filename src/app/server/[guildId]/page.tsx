@@ -35,24 +35,42 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `${server.name} Discord server`,
       `join ${server.name}`,
       `${server.name} Discord invite`,
+      `${server.name} server`,
       'Discord server directory',
       'Hentai Discord',
       'Discord servers',
       'anime Discord',
       'NSFW Discord',
+      'Discord community',
+      'Discord server list',
+      'best Discord servers',
+      'active Discord servers',
+      'Discord server finder',
       ...(server.categories || []).map((cat: string) => `${cat} Discord servers`),
-      ...(server.tags || []).map((tag: string) => `${tag} Discord`)
+      ...(server.tags || []).map((tag: string) => `${tag} Discord`),
+      // Add server-specific long-tail keywords
+      `${server.name} Discord community`,
+      `${server.name} Discord members`,
+      `${server.name} Discord chat`,
+      `how to join ${server.name}`,
+      `${server.name} Discord review`,
+      `${server.name} Discord rating`
     ].join(', ');
 
+    const pageTitle = `${serverTitle} | Discord Server with ${server.memberCount || 'Active'} Members`;
+    const enhancedDescription = server.description ? 
+      `${server.description.replace(/<[^>]*>/g, '').substring(0, 140)}... Join ${server.name} Discord server now!` : 
+      `Join ${server.name} Discord server with ${server.memberCount || 'thousands of'} active members. Discover amazing Discord communities on Hentai Discord directory.`;
+
     return {
-      title: `${serverTitle} - Discord Server`,
-      description: serverDescription,
+      title: pageTitle,
+      description: enhancedDescription,
       keywords: keywords,
       
       // Open Graph tags for social sharing - focused on the server
       openGraph: {
-        title: serverTitle,
-        description: serverDescription,
+        title: pageTitle,
+        description: enhancedDescription,
         url: `${baseUrl}/server/${params.guildId}`,
         siteName: server.name,
         images: [
@@ -70,8 +88,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       // Twitter Card tags - focused on the server
       twitter: {
         card: 'summary_large_image',
-        title: serverTitle,
-        description: serverDescription,
+        title: pageTitle,
+        description: enhancedDescription,
         images: [server.icon ? `https://cdn.discordapp.com/icons/${params.guildId}/${server.icon}.png?size=512` : '/icon-512x512.png'],
       },
       
