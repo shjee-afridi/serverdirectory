@@ -464,9 +464,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "worstRating": "1"
       },
       "itemReviewed": {
-        "@type": "Service",
-        "name": "Discord Server Directory",
-        "description": "Platform for discovering Discord servers"
+        "@type": "WebSite",
+        "name": "Hentai Discord - Discord Server Directory",
+        "description": "A comprehensive platform for discovering and reviewing Discord servers",
+        "url": "https://hentaidiscord.com"
       }
     }`,
   }}
